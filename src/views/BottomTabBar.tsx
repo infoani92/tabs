@@ -125,13 +125,7 @@ class TabBarBottom extends React.Component<BottomTabBarProps, State> {
   }
 
   componentWillUnmount() {
-    if (Platform.OS === 'ios') {
-      Keyboard.removeListener('keyboardWillShow', this._handleKeyboardShow);
-      Keyboard.removeListener('keyboardWillHide', this._handleKeyboardHide);
-    } else {
-      Keyboard.removeListener('keyboardDidShow', this._handleKeyboardShow);
-      Keyboard.removeListener('keyboardDidHide', this._handleKeyboardHide);
-    }
+    
   }
 
   // @ts-ignore
