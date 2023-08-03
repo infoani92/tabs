@@ -36,7 +36,6 @@ export default function withDimensions<Props extends InjectedProps>(
     }
 
     componentWillUnmount() {
-      Dimensions.removeEventListener('change', this.handleOrientationChange);
     }
 
     handleOrientationChange = ({ window }: { window: ScaledSize }) => {
