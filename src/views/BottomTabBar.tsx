@@ -125,7 +125,6 @@ class TabBarBottom extends React.Component<BottomTabBarProps, State> {
   }
 
   componentWillUnmount() {
-    
   }
 
   // @ts-ignore
